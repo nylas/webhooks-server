@@ -5,6 +5,7 @@ const app = express();
 const webhookRouter = require("./WebhookLogs/router");
 const PORT = process.env.PORT || 4000;
 
+app.use(webhookRouter);
 app.use(async (req, res, next) => {
   req.rawBody = "";
   req.on("data", (chunk) => (req.rawBody += chunk));
@@ -21,8 +22,6 @@ app.use(async (req, res, next) => {
     }
   });
 });
-
-app.use(webhookRouter);
 
 app.listen(PORT, () => {
   console.log(`Listening to PORT: ${PORT} !!!`);
