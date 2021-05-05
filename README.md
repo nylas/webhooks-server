@@ -4,7 +4,7 @@ This simple express app is inspired from the example repo of
 [nylas-nodejs/example/webhook](https://github.com/nylas/nylas-nodejs/tree/main/example/webhooks)
 I made some changes as using async await syntax, error handling using try catch, folder structures,
 before we used to run server locally and now we are making
-use of heroku to make it run in the cloud.
+use of heroku to make it run in the cloud (Heroku).
 
 This app correctly responds to Nylas challenge request when you add a webhook
 url to the [developer dashboard](https://developer.nylas.com). It also verifies
