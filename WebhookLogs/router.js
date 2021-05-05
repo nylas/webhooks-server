@@ -25,8 +25,8 @@ router.post("/webhook", async (req, res, next) => {
     next(error);
   }
   // This is the place where you want to edit on what deltas data you want to see on heroku logs.
-  //Uncomment the below if you want to see the deltas Object on your heroku logs --tail
-  // const data = await req.body.deltas;
+  // Uncomment the below if you want to see the deltas Object on your heroku logs --tail
+  // const data = await req.body;
   // console.log(JSON.stringify(data, null, 2));
 });
 
