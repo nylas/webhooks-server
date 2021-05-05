@@ -1,7 +1,7 @@
 {
   "name": "webhooks-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "This simple express app is inspired from the example repo of [nylas-nodejs/example/webhook](https://github.com/nylas/nylas-nodejs/tree/main/example/webhooks) I made some changes as using syntax as async await, error handling using try catch, folder structures, before we used to run server locally and now we are making use of heroku to make it run in the cloud.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -13,5 +13,13 @@
   "dependencies": {
     "dotenv": "^8.5.1",
     "express": "^4.17.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nylas/webhooks-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nylas/webhooks-server/issues"
+  },
+  "homepage": "https://github.com/nylas/webhooks-server#readme"
 }
