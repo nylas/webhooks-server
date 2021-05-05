@@ -19,12 +19,8 @@ Make sure `node` and `npm` are installed on your computer.
 - Clone this repo on your computer locally using the below command
 - git clone git@github.com:nylas/webhooks-server.git 
 
-- cd into the folder and run `npm install` to make sure all the necessay packages are installed.
-
-- Get your Client Secret which you can find on you [developer dashboard](https://developer.nylas.com) app settings.
+- Get your Client Secret which you can find on you [developer dashboard](https://developer.nylas.com) app settings you will need it later.
 - <img width="386" alt="Screen Shot 2021-04-30 at 10 55 39" src="https://user-images.githubusercontent.com/22378963/116672579-a4d2b300-a9a2-11eb-99a5-372bbad9cfa4.png">
-
-- Create `.env` file on the root directory of the repo and set your clientSecret as `nylasClientSecret = "your_client_secret";`
 
 # Deploy to Heroku app.
 
@@ -37,12 +33,21 @@ Make sure `node` and `npm` are installed on your computer.
 
 - Go to your folder locally and install heroku CLI [Install Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
 - Login to heroku from your terminal with `Heroku login`
-- Add heroku remote with `heroku git:remote -a your-heroku-app-name`
+- Add heroku remote with `heroku git:remote -a your-heroku-app-name`, make sure you are running the command from `webhooks-server` folder locally.
 - Build using `git push heroku master`
 
-- Finally you will get url as `https://your-heroku-app-name.herokuapp.com/`
+- You will see url as `https://your-heroku-app-name.herokuapp.com/` copy it.
 
 - Go to your [developer dashboard](https://developer.nylas.com) and set your heroku url ending with /webhook as a Callback URL.
 - Make sure you include /webhook in your callback Url example `https://your-heroku-app-name.herokuapp.com/webhook`
 
-🎉 Now track all your webhooks from Nylas Dashboard 🎉
+🎉 Now track all your webhooks from Nylas Dashboard Webhook logs 🎉
+
+
+# Extras
+- If you want to see your deltas object go to WebhookLogs/router.js on line 29 uncomment them, you can also add you own logic if you want.
+- Add the changes using `git add .`
+- Commit them `git commit -m "Logging deltas object"`
+- Build using `git push heroku master`
+
+Now you will be able to see the deltas object locally using the `heroku logs --tail`
