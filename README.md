@@ -32,7 +32,7 @@ Make sure `node` and `npm` are installed on your computer.
 
 
 - Go to your folder locally and install heroku CLI [Install Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
-- Login to heroku from your terminal with `Heroku login`
+- Login to heroku from your terminal with `heroku login`
 - Add heroku remote with `heroku git:remote -a your-heroku-app-name`, make sure you are running the command from `webhooks-server` folder locally.
 - Build using `git push heroku master`
 
