@@ -28,7 +28,7 @@ Make sure `node` and `npm` are installed on your computer.
 
 # Deploy to Heroku app.
 
-- Create a heroku account here [Heroku signup](https://signup.heroku.com/login)
+- Create a heroku account here [Heroku signup](https://signup.heroku.com/login) if you don't have one.
 - Create a new app in your Heroku, set App name and choose your region.
 - Go to heroku app settings click on `Reveal Config Vars` and set up your `nylasClientSecret`
 -<img width="680" alt="Screen Shot 2021-04-30 at 13 18 38" src="https://user-images.githubusercontent.com/22378963/116688201-a4441780-a9b6-11eb-8163-cb583259848f.png">
@@ -37,7 +37,7 @@ Make sure `node` and `npm` are installed on your computer.
 
 - Go to your folder locally and install heroku CLI [Install Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
 - Login to heroku from your terminal with `Heroku login`
-- Add heroku remote with `heroku git:remote -a your_heroku_app_name`
+- Add heroku remote with `heroku git:remote -a your-heroku-app-name`
 - Build using `git push heroku master`
 
 - Finally you will get url as `https://your-heroku-app-name.herokuapp.com/`
