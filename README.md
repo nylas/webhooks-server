@@ -17,7 +17,7 @@ Make sure `node` and `npm` are installed on your computer.
 
 - Go to your local folder where you want to save this repo
 - Clone this repo on your computer locally using the below command
-- git clone git@github.com:nylas/webhooks-server.git 
+- git clone git@github.com:nylas/webhooks-server.git
 
 - Get your Client Secret which you can find on you [developer dashboard](https://developer.nylas.com) app settings you will need it later.
 - <img width="386" alt="Screen Shot 2021-04-30 at 10 55 39" src="https://user-images.githubusercontent.com/22378963/116672579-a4d2b300-a9a2-11eb-99a5-372bbad9cfa4.png">
@@ -26,10 +26,8 @@ Make sure `node` and `npm` are installed on your computer.
 
 - Create a heroku account here [Heroku signup](https://signup.heroku.com/login) if you don't have one.
 - Create a new app in your Heroku, set App name and choose your region.
-- Go to heroku app settings click on `Reveal Config Vars` and set up your `nylasClientSecret`
--<img width="680" alt="Screen Shot 2021-04-30 at 13 18 38" src="https://user-images.githubusercontent.com/22378963/116688201-a4441780-a9b6-11eb-8163-cb583259848f.png">
-
-
+- Go to heroku app settings click on `Reveal Config Vars` and set up your `NYLAS_CLIENT_SECRET`
+- <img width="680" alt="Screen Shot 2021-04-30 at 13 18 38" src="https://user-images.githubusercontent.com/22378963/116688201-a4441780-a9b6-11eb-8163-cb583259848f.png">
 
 - Go to your folder locally and install heroku CLI [Install Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
 - Login to heroku from your terminal with `heroku login`
@@ -43,8 +41,8 @@ Make sure `node` and `npm` are installed on your computer.
 
 🎉 Now track all your webhooks from Nylas Dashboard Webhook logs 🎉
 
-
 ## Extras
+
 - If you want to see your deltas object go to WebhookLogs/router.js on line 29 uncomment them, you can also add you own logic if you want.
 - Add the changes using `git add .`
 - Commit them `git commit -m "Logging deltas object"`
