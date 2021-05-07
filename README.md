@@ -1,4 +1,4 @@
-# Nylas Webhooks
+# Webhooks-server
 
 This simple express app is inspired from the example repo of
 [nylas-nodejs/example/webhook](https://github.com/nylas/nylas-nodejs/tree/main/example/webhooks)
