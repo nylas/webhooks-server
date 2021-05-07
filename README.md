@@ -27,7 +27,7 @@ Make sure `node` and `npm` are installed on your computer.
 - Create a heroku account here [Heroku signup](https://signup.heroku.com/login) if you don't have one.
 - Create a new app in your Heroku, set App name and choose your region.
 - Go to heroku app settings click on `Reveal Config Vars` and set up your `NYLAS_CLIENT_SECRET`
-- <img width="680" alt="Screen Shot 2021-04-30 at 13 18 38" src="https://user-images.githubusercontent.com/22378963/116688201-a4441780-a9b6-11eb-8163-cb583259848f.png">
+- <img width="863" alt="Screen Shot 2021-05-07 at 10 37 19" src="https://user-images.githubusercontent.com/22378963/117422773-47011680-af20-11eb-866c-d8105196239b.png">
 
 - Go to your folder locally and install heroku CLI [Install Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
 - Login to heroku from your terminal with `heroku login`
@@ -43,9 +43,8 @@ Make sure `node` and `npm` are installed on your computer.
 
 ## Extras
 
-- If you want to see your deltas object go to WebhookLogs/router.js on line 29 uncomment them, you can also add you own logic if you want.
-- Add the changes using `git add .`
-- Commit them `git commit -m "Logging deltas object"`
-- Build using `git push heroku master`
+- If you want to see your deltas object use the below command from the terminal `heroku logs --tail`
 
-Now you will be able to see the deltas object locally using the `heroku logs --tail`
+Now you will be able to see the deltas object locally.
+
+<img width="450" alt="Screen Shot 2021-05-07 at 10 39 48" src="https://user-images.githubusercontent.com/22378963/117423065-96dfdd80-af20-11eb-8915-0465b3799b37.png">
