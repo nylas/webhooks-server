@@ -36,8 +36,8 @@ Make sure `node` and `npm` are installed on your computer.
 
 - You will see url as `https://your-heroku-app-name.herokuapp.com/` copy it.
 
-- Go to your [developer dashboard](https://developer.nylas.com) and set your heroku url ending with /webhook as a Callback URL.
-- Make sure you include /webhook in your callback Url example `https://your-heroku-app-name.herokuapp.com/webhook`
+- Go to your [developer dashboard](https://developer.nylas.com) and set your heroku url ending with `/webhook` as a Callback URL.
+- Make sure you include `/webhook` in your callback Url example `https://your-heroku-app-name.herokuapp.com/webhook`
 
 🎉 Now track all your webhooks from Nylas Dashboard Webhook logs 🎉
 
